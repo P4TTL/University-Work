@@ -1,0 +1,19 @@
+# Problem: find the mean temperature of the week
+
+# Input: a list of 7 numbers
+temperatures = [5, 0, -3, 7, 8, 5, 0]
+
+# Sub-problem: compute the sum of a list of numbers
+total = 0
+for temperature in temperatures:
+    total = total + temperature
+
+# Sub-problem: compute the length of a list
+length = 0
+for temperature in temperatures:
+    length = length + 1
+
+# Output: mean, a number
+mean = total / length
+
+print('The mean of', temperatures, 'is', round(mean))
